@@ -1,0 +1,195 @@
+
+/* Configurações gerais do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.cabecalho h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+/* Menu de navegação */
+.menu {
+    background-color: #0b2038;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #42c5f5;
+}
+
+/* Banner principal */
+.banner {
+    background: linear-gradient(135deg, #1769aa, #23a6d5);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Botão de apresentação */
+.botao {
+    display: inline-block;
+    background-color: white;
+    color: #1769aa;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #dceeff;
+}
+
+/* Seção de cursos */
+.secao-cursos {
+    max-width: 1100px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.secao-cursos h2,
+.sobre-nos h2 {
+    text-align: center;
+    color: #12345a;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Organização dos cartões */
+.lista-cursos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Cartões individuais dos cursos */
+.card-curso {
+    background-color: white;
+    flex: 1 1 250px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border-top: 5px solid #23a6d5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.card-curso:hover {
+    transform: translateY(-5px);
+}
+
+.card-curso h3 {
+    color: #1769aa;
+    margin-bottom: 15px;
+}
+
+/* Seção sobre a empresa */
+.sobre-nos {
+    background-color: #e4eef8;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.sobre-nos p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #0b2038;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.rodape h2 {
+    margin-bottom: 15px;
+}
+
+.rodape p {
+    margin-bottom: 8px;
+}
+
+.direitos {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b8c9da;
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 600px) {
+
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .banner {
+        padding: 55px 15px;
+    }
+
+    .banner h2 {
+        font-size: 27px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .lista-cursos {
+        flex-direction: column;
+    }
+
+    .card-curso {
+        width: 100%;
+    }
+}
